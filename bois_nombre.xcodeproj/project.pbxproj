@@ -12,6 +12,8 @@
 		F5A6D47E21A300B2001027C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A6D47C21A300B2001027C1 /* Main.storyboard */; };
 		F5A6D48021A300B3001027C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A6D47F21A300B3001027C1 /* Assets.xcassets */; };
 		F5A6D48321A300B3001027C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A6D48121A300B3001027C1 /* LaunchScreen.storyboard */; };
+		F5A6D48B21A307D8001027C1 /* JeuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6D48A21A307D8001027C1 /* JeuxViewController.swift */; };
+		F5A6D48D21A30806001027C1 /* ResultatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6D48C21A30806001027C1 /* ResultatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F5A6D47F21A300B3001027C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A6D48221A300B3001027C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A6D48421A300B3001027C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A6D48A21A307D8001027C1 /* JeuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeuxViewController.swift; sourceTree = "<group>"; };
+		F5A6D48C21A30806001027C1 /* ResultatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				F5A6D47821A300B2001027C1 /* AppDelegate.swift */,
 				F5A6D47A21A300B2001027C1 /* ViewController.swift */,
 				F5A6D47C21A300B2001027C1 /* Main.storyboard */,
+				F5A6D48C21A30806001027C1 /* ResultatsViewController.swift */,
 				F5A6D47F21A300B3001027C1 /* Assets.xcassets */,
 				F5A6D48121A300B3001027C1 /* LaunchScreen.storyboard */,
 				F5A6D48421A300B3001027C1 /* Info.plist */,
+				F5A6D48A21A307D8001027C1 /* JeuxViewController.swift */,
 			);
 			path = bois_nombre;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A6D47B21A300B2001027C1 /* ViewController.swift in Sources */,
+				F5A6D48B21A307D8001027C1 /* JeuxViewController.swift in Sources */,
+				F5A6D48D21A30806001027C1 /* ResultatsViewController.swift in Sources */,
 				F5A6D47921A300B2001027C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
