@@ -15,6 +15,7 @@ class JeuxViewController: UIViewController {
     @IBOutlet weak var borneSupButton: UIButton!
     @IBOutlet weak var nombreField: UITextField!
     
+    
     var difficulty = Int()
     var nbMystere = Int()
     var borneSup = Int()
