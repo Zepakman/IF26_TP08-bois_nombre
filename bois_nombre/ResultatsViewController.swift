@@ -10,14 +10,19 @@ import UIKit
 
 class ResultatsViewController: UIViewController {
 
+    @IBOutlet weak var resultatLabel: UILabel!
     
     var count = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultatLabel.text = String(count)
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

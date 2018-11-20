@@ -96,9 +96,12 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <segue destination="sIu-XD-iQQ" kind="show" identifier="segueBravo" id="Gek-Wj-spa"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd7-zV-uM9">
-                                <rect key="frame" x="125" y="443" width="124" height="63"/>
+                                <rect key="frame" x="117" y="455" width="124" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.19813794030000001" blue="0.048988425850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -107,7 +110,6 @@
                                 </state>
                                 <connections>
                                     <action selector="TesterButton:" destination="otO-QC-rbI" eventType="touchUpInside" id="wuL-l6-xZO"/>
-                                    <segue destination="sIu-XD-iQQ" kind="show" id="5uX-hW-eC0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="933.60000000000002" y="117.39130434782609"/>
         </scene>
-        <!--Jeux View Controller-->
+        <!--Resultats View Controller-->
         <scene sceneID="V8h-sO-rpz">
             <objects>
-                <viewController id="sIu-XD-iQQ" customClass="JeuxViewController" customModule="bois_nombre" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sIu-XD-iQQ" customClass="ResultatsViewController" customModule="bois_nombre" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oyl-sX-xWA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,10 +164,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HDB-Rh-nel"/>
                     </view>
+                    <connections>
+                        <outlet property="resultatLabel" destination="ZDM-1H-QCi" id="EDj-bt-dQm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qB5-Dx-L2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1677.5999999999999" y="116.49175412293854"/>
+            <point key="canvasLocation" x="1785" y="117"/>
         </scene>
     </scenes>
 </document>

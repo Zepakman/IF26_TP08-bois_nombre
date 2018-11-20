@@ -24,25 +24,29 @@ class JeuxViewController: UIViewController {
     
     @IBAction func TesterButton(_ sender: Any) {
         if self.nombreField.text != "" {
+            nombreEssais = nombreEssais + 1
             if self.nombreField.text == String(nbMystere) {
-                self.borneSup = 0
-            } else if (Int(self.nombreField.text!)! < self.nbMystere) {
+                performSegue(withIdentifier: "segueBravo", sender: self)
+            
+            } else if ((Int(self.nombreField.text!)! < self.nbMystere) && (Int(self.nombreField.text!)! > self.borneInf)) {
                 self.borneInf = (Int(self.nombreField.text!)!)
                 self.borneInfButton.setTitle((self.nombreField.text), for: .normal)
-            } else if (Int(self.nombreField.text!)! > self.nbMystere) {
+            } else if ((Int(self.nombreField.text!)! > self.nbMystere) && (Int(self.nombreField.text!)! < self.borneSup)){
                 self.borneSup = (Int(self.nombreField.text!)!)
                 self.borneSupButton.setTitle((self.nombreField.text), for: .normal)
             }
-            nombreEssais = nombreEssais + 1
+            
             self.nombreField.text = ""
         }
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let DestViewController : ResultatsViewController = segue.destination as! ResultatsViewController
         
-        DestViewController.count = self.nombreEssais
+        if segue.identifier == "segueBravo" {
+            let vc = segue.destination as? ResultatsViewController
+            vc?.count = self.nombreEssais
+        }
         
     }
     
